@@ -6,12 +6,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 public class GSelects {
 
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions co = new ChromeOptions();
+		co.addArguments("--headless");
+		co.addArguments("--incognito");
+		WebDriver driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
 		driver.get("https://only-testing-blog.blogspot.com/2014/01/textbox.html");
 		// selects
