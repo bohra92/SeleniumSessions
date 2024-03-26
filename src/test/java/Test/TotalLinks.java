@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class TotalLinks {
 
-	public static void main(String[] args) {ß
+	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://google.com");
 		List<WebElement> links = driver.findElements(By.xpath("//a"));
@@ -21,7 +21,7 @@ public class TotalLinks {
 			System.out.println(link.getText());
 		}
 		Actions act = new Actions(driver);
-		act.moveToElement(null).perform()
+		act.moveToElement(null).perform();
 		driver.close();
 
 	}
