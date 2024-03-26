@@ -14,9 +14,6 @@ public class Bb_Initial {
 		//driver.manage().window().fullscreen();
 		//delete cookies
 		//driver.manage().deleteAllCookies();
-		
-		
-		
 	}
 
 }
